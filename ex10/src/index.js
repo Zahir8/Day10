@@ -1,4 +1,4 @@
-function myFunction(){
+function myFunction() {
     var myMusic = {
         001: {
             artist: "Billy Joel",
@@ -6,24 +6,26 @@ function myFunction(){
             release_year: 1973,
             formats: {
                 1: "CD",
-                2: "BT",
-                3: "Lp"
+                2: "8T",
+                3: "LP"
+
             },
-            gold: true,
+            gold: true
         },
         002: {
-            artist: "Elvis Presley",
-            title: "Pot Luck",
-            release_year: 1962,
-            id: 2,
+            artist: "Edo Maajka",
+            title: "Slusaj mater",
+            release_year: 2000,
+            id: 3,
             formats: {
                 1: "CD",
-                2: "BT",
-                3: "Lp"
-            },
-            gold: true,
+                2: "Kaseta",
+                3: "Digital"
+            }
         }
+        
     };
+    return myMusic;
 }
-console.log(myFunction()[2]);
+myFunction()[2];
 module.exports = myFunction;
